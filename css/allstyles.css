@@ -1,0 +1,236 @@
+body,
+p,
+h1,
+span,
+div,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1294px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container_page {
+  background: #133d8d;
+  height: 160px;
+}
+
+header {
+  background: linear-gradient(0deg,
+      rgba(19, 61, 141, 0.75) 0%,
+      rgba(19, 61, 141, 0.75) 100%);
+}
+
+
+.headerUp {
+  max-width: 1294px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 25px 0;
+}
+
+.infoMedium {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: 550;
+  line-height: 1.225rem;
+  font-size: 0.875rem;
+}
+
+.infoMedium a {
+  color: white;
+  text-decoration: none;
+}
+
+.headerDown {
+  margin-top: 30px;
+}
+
+
+.headerDown ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.225rem;
+  padding: 0;
+}
+.dom{
+  position: relative;
+  z-index: 2;
+
+  /* все ок? */
+}
+.headerDown ul li {
+  list-style: none;
+}
+
+.headerDown ul li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+/* Бургер меню */
+
+.burgerButton {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.burgerButton span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.burgerButton span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+
+.burgerButton span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.activeMenu {
+  background: linear-gradient(0deg,
+      rgba(19, 61, 141, 0.75) 0%,
+      rgba(19, 61, 141, 0.75) 100%),
+    lightgray 50% / cover no-repeat;
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 139, 0.5);
+}
+
+.burgerButton.activeButton span:nth-of-type(1) {
+  display: none;
+}
+
+.burgerButton.activeButton span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.burgerButton.activeButton span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+#burgerButton {
+  display: none;
+}
+
+/* footer */
+
+.container_footer {
+  background: #133d8d;
+}
+
+.contentFoot {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.logoFoot {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.parentFoot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footAll {
+  flex: 0 1 306px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footAll span {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footAll ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footAll li {
+  list-style-type: none;
+  font-size: 0.875rem;
+  font-weight: 550;
+  line-height: 140%;
+  color: white;
+}
+
+.boxFoot {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.footAllInfo {
+  display: flex;
+  gap: 30px;
+  text-align: end;
+  font-weight: 550;
+  line-height: 140%;
+  color: white;
+}
+
+.footAllInfo div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footAllContact {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footAllContact a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.burgerMenu {
+  display: none;
+}
