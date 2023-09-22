@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+        <link rel="stylesheet" href="./css/allstyles.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <title>Ледокольный газовоз</title>
+    <script src="./js/burgerAndForm.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Блок верхнего, нижнего и бургер меню-->
+        <div class="container_page">
+            <div class="container">
+                <div class="headerUp">
+                    <a href="index.html" title="Главная">
+                        <img src="./images/Vector.svg" alt="Logo"></a>
+                    <div class="infoMedium">
+                        <a href="mailto:info@lead-group.ru">info&commat;lead-group.ru </a>
+                        <a href="tel:+7 (495) 123-45-67">+7 &lpar;495 &rpar; 123-45-67</a>
+                    </div>
+                    <img src="./images/ic_outline-search.svg" alt="Поиск">
+                </div>
+                <div class="dom">
+                    <nav class="headerDown">
+                        <ul id="listUlMenu" class="listUlMenu">
+                            <li><a href="page.html" title="Виды деятельности">О нас</a></li>
+                            <li><a href="error.html">Флот</a></li>
+                            <li><a href="#">Инвесторам</a></li>
+                            <li><a href="work.html" title="Вакансии">Карьера</a></li>
+                            <li><a href="#">Пресс-центр</a></li>
+                            <li><a href="#">Устойчивое развитие</a></li>
+                            <li><a href="contacts.html" title="Контакты">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div id='burgerButton' class="burgerButton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Форма, контакты и карта-->
+        <div class="container">
+            <div class="content">
+                <h1>контактная информация</h1>
+                <div class="blockOne">
+                    <div><span>Главная</span></div>
+                    <div id="square"></div>
+                    <div><span>Контактная информация</span></div>
+                </div>
+                <!-- Форма-->
+                <div class="container_form">
+                    <h2>Оставить сообщение</h2>
+                    <form id="contactForm">
+                        <div class="formBlock">
+                            <label for="name">Имя&colon;</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div class="formBlock">
+                            <label for="email">Email&colon;</label>
+                            <input type="email" id="email" name="email" required placeholder="Адрес почты">
+                        </div>
+                        <div class="formBlock">
+                            <label for="form_message">Сообщение&colon;</label>
+                            <textarea id="form_message" name="form_message" required
+                                placeholder="Введите сообщение"></textarea>
+                        </div>
+                        <button type="submit">Отправить</button>
+                    </form>
+                    <div id="success-message" class="hidden">
+                        <p>Сообщение успешно отправлено&excl; Мы свяжемся с вами в ближайшее время.</p>
+                    </div>
+                </div>
+                <div class="maps">
+                    <div class="frame">
+                        <div class="сountries">
+                            <div class="blockMsk">
+                                <h4>Москва</h4>
+                            </div>
+                            <div class="blockSp">
+                                <h4>Петербург</h4>
+                            </div>
+                        </div>
+                        <div class="contactsInfo">
+                            <div class="infoBlock1">
+                                <h3>Покровская площадь, д.3, к. 5,стр 1</h3>
+                            </div>
+                            <div class="infoBlock2"><a href="tel:+7 (495) 123-45-67">+7 &lpar;495 &rpar; 123-45-67</a></div>
+                            <div class="infoBlock3"><a href="mailto:info@lead-group.ru">info &commat;lead-group.ru</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <!-- Подвал-->
+        <div class="container_footer">
+            <div class="container contentFoot">
+                <div class="logoFoot"><img src="./images/Vector.svg" alt="Logo"></div>
+                <div class="parentFoot">
+                    <div class="footAll"><span>О компании</span>
+                        <ul class="boxFoot">
+                            <li>Профиль компании</li>
+                            <li>История</li>
+                            <li>Совет директоров</li>
+                            <li>Контакты</li>
+                        </ul>
+                    </div>
+                    <div class="footAll"><span>флот</span>
+                        <ul class="boxFoot">
+                            <li>Виды деятельности</li>
+                            <li>Устойчивое развитие</li>
+                            <li>Безопасность и качество</li>
+                            <li>Защита окружающей среды</li>
+                            <li>Социальная ответственность</li>
+                        </ul>
+                    </div>
+                    <div class="footAll"><span>Инвесторам</span>
+                        <ul class="boxFoot">
+                            <li>Акции</li>
+                            <li>Отчеты и результаты</li>
+                            <li>Раскрытие информации</li>
+                            <li>Корпоративное управление</li>
+                            <li>Аналитики</li>
+                            <li>Контакты для инвесторов</li>
+                        </ul>
+                    </div>
+                    <div class="footAll footAllInfo">
+                        <div>
+                            <div>
+                                <p>
+                                    191186, Санкт-Петербург, Невский переулок, д. 3, офис 10-25
+                                </p>
+                            </div>
+                            <div>
+                                <p> 125047, Москва, Покровская площадь, д.3, к. 5,стр 1 </p>
+                            </div>
+                        </div>
+                        <div class="footAllContact">
+                            <a href="tel:+7 (495) 123-45-67">+7 &lpar;495 &rpar; 123-45-67</a>
+                            <a href="mailito:info@lead-group.ru">info &commat;lead-group.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
